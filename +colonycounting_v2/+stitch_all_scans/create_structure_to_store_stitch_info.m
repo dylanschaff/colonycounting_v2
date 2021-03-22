@@ -14,7 +14,7 @@ function stitch_info = create_structure_to_store_stitch_info(paths)
         path_folder = paths{i};
 
         % get a list of all images in the folder:
-        list_image_names = dir(fullfile(path_folder, 'Scan*.tif'));
+        list_image_names = dir(fullfile(path_folder, '*.tif'));
 
         % get a list of all the scans in the folder:
         list_scan_names = extractfield(list_image_names, 'name');

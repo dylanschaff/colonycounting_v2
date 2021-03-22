@@ -28,7 +28,7 @@ function downsize_all_scans(varargin)
         mkdir(folder_downsized);
        
         % get list of images:
-        list_images = dir(fullfile(folder_original, 'Scan*.tif'));
+        list_images = dir(fullfile(folder_original, '*.tif'));
         
         % for each image:
         for j = 1:numel(list_images)
